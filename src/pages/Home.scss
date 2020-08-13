@@ -1,0 +1,42 @@
+$primary-color: #7761ff;
+$secondary-color: #4a4a4a;
+$tertiary-color: yellow;
+
+.join-freebys {
+  background-color: $primary-color;
+  color: #fff;
+  height: 250px;
+  display: flex;
+
+  div {
+    margin: auto;
+  }
+
+  button {
+    &:hover {
+      box-shadow: 5px 9px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    &:focus {
+      box-shadow: unset;
+    }
+  }
+}
+
+.content {
+  max-width: 1500px;
+  height: 100vh;
+  margin: auto;
+}
+
+.nav-tabs {
+  max-width: 75%;
+  margin: auto;
+}
+
+.join-freebys Button {
+  width: 75%;
+  background-color: #fff !important;
+  border-color: #fff !important;
+  color: $primary-color !important;
+}

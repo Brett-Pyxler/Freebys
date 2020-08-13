@@ -1,0 +1,19 @@
+$primary-color: #7761ff;
+$secondary-color: #4a4a4a;
+$tertiary-color: yellow;
+
+.signup {
+  max-width: 500px;
+  margin: auto;
+
+  .btn {
+    display: block;
+    width: 75%;
+    margin: auto;
+  }
+}
+
+form {
+  margin: 20px;
+  text-align: left;
+}

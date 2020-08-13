@@ -1,0 +1,41 @@
+$primary-color: #7761ff;
+$secondary-color: #4a4a4a;
+$tertiary-color: yellow;
+
+.itemBox {
+  color: lightgray !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .item-label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  a {
+    color: $primary-color;
+    font-size: 20px;
+    &:hover {
+      text-decoration: unset !important;
+    }
+  }
+
+  h2 {
+    position: absolute;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    font-size: 36px;
+    position: absolute;
+    font-weight: bold;
+    color: $primary-color;
+    margin: 0;
+    padding: 0 15px;
+  }
+}

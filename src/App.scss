@@ -1,0 +1,103 @@
+$primary-color: #7761ff;
+$secondary-color: #4a4a4a;
+$tertiary-color: yellow;
+
+body {
+  color: $secondary-color;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.navbar {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  height: 45px;
+}
+
+.navbar,
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link {
+  color: $secondary-color;
+}
+
+nav .nav-link:hover {
+  color: $primary-color !important;
+  border-bottom: solid 2px #f8f9fa;
+  &:hover {
+    border-bottom: solid 2px #7761ff;
+  }
+}
+
+.nav-link.active {
+  color: $primary-color !important;
+  border-bottom: solid 2px #7761ff;
+}
+
+.signup-btn:focus,
+.login-btn:focus {
+  color: unset !important;
+}
+
+.navbar-brand:hover {
+  color: unset !important;
+}
+
+.navbar-brand img {
+  width: 115px;
+}
+
+.modal-content {
+  border: unset !important;
+}
+
+.footer {
+  height: 150px;
+}
+
+@media (min-width: 992px) {
+  .modal-lg,
+  .modal-xl {
+    max-width: 400px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,26 @@
+.trending {
+  max-width: 1500px;
+  margin: 20px auto 20px auto;
+}
+
+@mixin responsive-box($height) {
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    padding-top: $height;
+  }
+}
+
+.itemBox {
+  @include responsive-box(100%);
+  /*For the box appearance*/
+  color: #fff;
+  width: 20%;
+  margin: 10px;
+  border-width: 1px;
+}
+
+.explore-carousel {
+  display: flex;
+}

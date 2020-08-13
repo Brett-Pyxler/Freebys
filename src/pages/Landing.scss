@@ -1,0 +1,181 @@
+$primary-color: #7761ff;
+$secondary-color: #4a4a4a;
+$tertiary-color: yellow;
+
+.landing {
+  margin: auto;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.hero {
+  background-color: $primary-color;
+  color: white;
+  height: 250px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 56%;
+    height: 150px;
+    background-color: #ffffff;
+    right: 0px;
+    bottom: -40%;
+    z-index: 0;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 60%;
+    height: 248px;
+    background-color: #7761ff;
+    left: -2%;
+    bottom: -24%;
+    z-index: -1;
+  }
+}
+
+.form-container {
+  width: 50%;
+  height: 500px;
+  border-right: solid 2px $primary-color;
+  display: flex;
+}
+
+.landing-form {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  button {
+    width: 50%;
+    margin: auto;
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+  button:hover {
+    background-color: #7761ffcc;
+    border-color: #7761ffcc;
+  }
+}
+
+.logo {
+  width: 250px;
+  z-index: 1;
+}
+
+.subscribe-container {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.mission-statement {
+  width: 50%;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-size: 24px;
+    font-style: italic;
+    width: 75%;
+    color: $secondary-color;
+  }
+}
+
+.features {
+  text-align: center;
+
+  h2 {
+    font-size: 48px;
+    color: $primary-color;
+  }
+}
+
+.feature-list {
+  margin: auto;
+  width: 100%;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.feature-item {
+  height: 150px;
+  font-size: 20px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+
+  p {
+    color: white;
+    margin: auto;
+    padding: 0 10px 0 10px;
+  }
+}
+
+.display-message {
+  width: 75%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  color: #7761ff;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 840px) {
+  .hero {
+    &:before {
+      content: '';
+      display: none;
+    }
+    &:after {
+      content: '';
+      display: none;
+    }
+  }
+
+  .subscribe-container {
+    flex-direction: column;
+    margin-top: 50px;
+
+    .form-container {
+      order: 2;
+      width: 100%;
+      border: unset;
+      height: 100%;
+      margin-top: 50px;
+    }
+
+    .landing-form {
+      width: 90%;
+    }
+
+    .mission-statement {
+      width: 100%;
+      height: 100%;
+
+      p {
+        width: 90%;
+      }
+    }
+  }
+  .feature-list {
+    display: block;
+  }
+}
